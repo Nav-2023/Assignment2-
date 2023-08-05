@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update and Delete Content</title>
+</head>
+
+<body>
+  <h1>Update and Delete Content</h1>
+  <?php
+  // Check if the user is logged in (you should implement this logic in PHP)
+  $loggedIn = true;
+  if ($loggedIn) {
+    // Display content that can be updated or deleted
+    ?>
+    <div>
+      <h2>Content Title</h2>
+      <p>Content text goes here...</p>
+      <img src="path/to/image.jpg" alt="Content Image">
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+    <?php
+  } else {
+    // If not logged in, show a message or redirect to login page
+    echo "<p>Please log in to access this page.</p>";
+  }
+  ?>
+</body>
+
+</html>
